@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjezba Formi</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="get">
+        <label for="roll">Roll no.:</label>
+        <input type="number" id="roll" required> <br> <br>
+        
+        <label for="s_name">Student name:</label>
+        <input type="text" id="s_name" required placeholder="First name"> <span>-</span>
+        <input type="text" id="s_name" required placeholder="Last name"> <br> <br>
+
+        <label for="father_name">Father's name:</label>
+        <input type="text" id="father_name"> <br> <br>
+
+        <label for="date_birth">Date of birth:</label>
+        <input type="text" id="date_birth" required placeholder="Day" maxlength="2"> <span>-</span>
+        <input type="text" id="date_birth" required placeholder="Month" maxlength="2"> <span>-</span>
+        <input type="text" id="date_birth" required placeholder="Year" maxlength="4"> <br> <br>
+
+        <label for="mob_no">Mobile no.:</label>
+        <input type="text" id="mob_no" value="+385" size="1"> <span>-</span>
+        <input type="text" id="mob_no" required> <br> <br>
+
+        <label for="email">Email id:</label>
+        <input type="email" id="email" required> <br> <br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" required minlength="8"> <br> <br>
+
+        <label for="gen">Gender:</label>
+        <input type="radio" name="gen" id="M">
+        <label for="gen">Male</label>
+        <input type="radio" name="gen" id="F">
+        <label for="gen">Female</label> <br> <br>
+
+        <label for="dep">Department:</label>
+        <input type="checkbox" name="dep0" id="CSE">
+        <label for="dep">CSE</label>
+        <input type="checkbox" name="dep1" id="IT">
+        <label for="dep">IT</label>
+        <input type="checkbox" name="dep3" id="ECE">
+        <label for="dep">ECE</label>
+        <input type="checkbox" name="dep4" id="Civil">
+        <label for="dep">Civil</label>
+        <input type="checkbox" name="dep5" id="Mech">
+        <label for="dep">Mech</label> <br> <br>
+
+        <label for="course">Course</label>
+        <select name="sel" id="sel">
+            <option value="default">Select Current Course</option>
+            <option value="IT">IT</option>
+            <option value="Math">Math</option>
+            <option value="Web">Web</option>
+        </select>
+    </form>
+</body>
+</html>

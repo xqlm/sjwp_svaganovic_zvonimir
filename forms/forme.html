@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+</head>
+<body>
+    
+    <h2>Forme u HTML-u</h2>
+
+    <form action="#" method="get">
+        
+        <label for="Ime">Unesi ime: </label>
+        <input type="text" id="Ime" required placeholder="ime"> <br> <br>
+
+        <label for="prezime">Unesi prezime</label>
+        <input type="text" id="prezime" required > <br> <br>
+
+        <label for="pass">Unesi lozinku</label>
+        <input type="password" name="password" id="pass" required minlength="8"> <br> <br>
+        
+        <label for="mali">Unesi e-mail</label>
+        <input type="email" name="email" id="mail" required> <br> <br>
+
+        <label for="date">Unesi datum rođenja</label>
+        <input type="date" name="datum" id="date" required> <br> <br>
+
+        <label for="color">Izaberi boju</label>
+        <input type="color" name="boja" id="color"> <br> <br>
+        
+        <label for="file">Unesi datoteku</label>
+        <input type="file" name="dat" id="file"> <br> <br>
+
+        <label for="tel">Unesi broj telefona</label>
+        <input type="tel" name="broj" id="tel"> <br> <br>
+
+        <p>odaberi najbolji klub</p>
+        <input type="radio" name="klub" id="real0">
+        <label for="real0">Real Madrid</label> <br> <br>
+
+        <input type="radio" name="klub" id="barc0" value="Barcelona">
+        <label for="barc0">Barcelona</label> <br> <br>
+
+        <input type="radio" name="klub" id="din_zg0" value="Dinamo Zagreb">
+        <label for="din_zg0">Dinamo Zagreb</label> <br> <br>
+
+        <p>odaberi najbolji klub</p>
+        <input type="checkbox" name="klub4" id="real">
+        <label for="real">Real Madrid</label> <br> <br>
+
+        <input type="checkbox" name="klub4" id="barc">
+        <label for="barc">Barcelona</label> <br> <br>
+
+        <input type="checkbox" name="klub5" id="din_zg">
+        <label for="din_zg">Dinamo Zagreb</label> <br> <br>
+
+        <input type="reset" value="poništi">
+
+        <input type="submit" value="pošalji">
+    </form>
+</body>
+</html>
