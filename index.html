@@ -7,6 +7,13 @@
     <meta name="author" content="Zvonimir Svaganovic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sktiptni jezici</title>
+    <!-- internal css -->
+    <style>
+        .drugi {
+            color:red;
+        }
+    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -25,12 +32,18 @@
     <h4>Naslov 4</h4>
     <h5>Naslov 5</h5>
     <h6>Naslov 6</h6>
-    <!-- paragrafi -->
+    <!-- dodavanje css-a -->
+     <h2>dodavanje css-a</h2>
+    <ul>
+        <li style="color: lightskyblue;">Inline</li>
+        <li class="drugi">Internal</li>
+        <li class="treci">External</li>
+    </ul>
+     <!-- paragrafi -->
     <!-- br - enter -->
-
     <!-- hr - horizontal rule -->
     <hr>
-    <p>Lorem ipsum dolor sit amet consectetur <br> 
+    <p draggable="true">Lorem ipsum dolor sit amet consectetur <br> 
         adipisicing elit. Aspernatur, obcaecati 
         minus aliquam illo cumque praesentium natus <br>
         quidem quam fugiat nesciunt consectetur quis, amet atque 
@@ -44,7 +57,7 @@
     <h1>filmovi</h1>
     <h2>top 3 filmovi</h2>
     <hr>
-    <h3>john wick</h3>
+    <h3 id="naslov3">john wick</h3>
     <p>paragraf</p>
     <hr>
     <h3>john wick 2</h3>

@@ -1,0 +1,28 @@
+/* class selector
+više istoimenih klasa */
+.treci{
+    color: green;
+}
+
+/* element selector */
+h2, p {
+    color: blueviolet;
+}
+
+/* id selector 
+samo jedan */
+
+#naslov3 {
+    color: chocolate;
+}
+
+/* univrerzalni selector */
+
+* {
+    background-color: aquamarine;
+}
+
+/*  */
+p[draggable] {
+    background-color: aqua;
+}
