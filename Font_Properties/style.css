@@ -1,0 +1,23 @@
+.clr{
+    color: coral;
+}
+
+.fs{
+    font-size: 2rem;
+}
+
+.fw{
+    font-weight: 900;
+}
+
+.ff{
+    font-family: "Caveat", cursive;
+}
+
+.ta{
+    text-align: right ;
+}
+
+html{
+    font-size: 30px;
+}
