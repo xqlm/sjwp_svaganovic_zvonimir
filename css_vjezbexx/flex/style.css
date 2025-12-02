@@ -1,0 +1,9 @@
+.body{
+    background-color: hsl(0, 0%, 80%);
+}
+.tata{
+    width: 33%;
+    background-color: white;
+    border: 1px solid #baccd8;
+    border-radius: 17px;
+}
