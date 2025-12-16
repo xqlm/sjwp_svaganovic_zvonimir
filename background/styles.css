@@ -1,0 +1,39 @@
+html{
+    background-image: linear-gradient(to top, #49225B, #6E3482, #a56abd, #e7dbef, #f5ebfa);
+    height: 100%;
+}
+.cont{
+    width: 33%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    position: relative;
+    top: 25vh;
+}
+div:not(.cont){
+    flex-grow: 1;
+    height: 150px;
+    border: 100px;
+    box-shadow: 1px -1px 40px -6px rgba(0,0,0,0.7);
+    border-radius: 100px;
+    position: relative;
+}
+.div1{
+    background-color: #49225B;
+}
+.div2{
+    top: -40px;
+    background-color: #6E3482;
+}
+.div3{
+    top: -80px;
+    background-color: #a56abd;
+}
+.div4{
+    top: -120px;
+    background-color: #e7dbef;
+}
+.div5{
+    top: -1600px;
+    background-color: #f5ebfa;
+}

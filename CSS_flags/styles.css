@@ -109,3 +109,68 @@ h1{
     border-bottom: 30px solid transparent;
     z-index: 1;
 }
+
+.container{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+.cam1{
+    flex-grow: 1;
+    background-color: #007a5e;
+}
+.cam2{
+    flex-grow: 1;
+    max-width: 166.66px;
+    background-color: #ce1126;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cam3{
+    flex-grow: 1;
+    background-color: #fcd116;
+}
+.zvijezda{
+    width: 100px;
+    height: 100px;
+    background-color: #fcd116;
+    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+}
+.turska{
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tur1{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.tur2{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 4px;
+}
+.zvijezda1{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+    transform: rotate(-20deg);
+    position: relative; 
+    left: -15px;
+
+}
