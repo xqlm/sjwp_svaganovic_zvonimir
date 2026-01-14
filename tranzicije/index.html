@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranzicije</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 3rem;
+        }
+        div {
+            width: 250px;
+            height: 250px;
+            background-color: blueviolet;
+         /* transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 100ms;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+            transition: all 1s 100ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+        div:hover {
+            background-color: #FFAA33;
+            transform: rotate(90deg) scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tranzicije</h1>
+    <div></div>
+</body>
+</html>
