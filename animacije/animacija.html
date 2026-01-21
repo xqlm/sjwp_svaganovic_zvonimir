@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacija</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            height: 90vh;
+        }
+        .container, .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: #fff;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            box-sizing: border-box;
+
+            animation: spin 1.5s linear infinite alternate ;
+
+        }
+        @keyframes spin {
+            from{
+                scale: 0;
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+                scale: 2;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animacija</h1>
+    <div class="container">
+        <div class="box"><p>3.E</p></div>
+    </div>
+
+</body>
+</html>

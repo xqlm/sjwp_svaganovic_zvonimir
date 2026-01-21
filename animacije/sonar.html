@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .outline, .pulse{
+            width: 800px;
+            height: 800px;
+            border: 2px solid darkgray;
+            border-radius: 50%;
+        }
+        .center{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 50%;
+        }
+        .pulse{
+            transform-origin: top left;
+            animation: scan 3s ease-out 0s infinite normal;
+        }
+        @keyframes scan {
+            from{
+                scale: 0;
+                opacity: 1;
+            }
+            to{
+                scale: 1;
+                opacity: 0.2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outline"></div>
+    <div class="pulse"></div>
+    <div class="center"></div>
+    <div class="mali" id="1"></div>
+    <div class="mali" id="2"></div>
+    <div class="mali" id="3"></div>
+    <div class="mali" id="4"></div>
+    <div class="mali" id="5"></div>
+</body>
+</html>
