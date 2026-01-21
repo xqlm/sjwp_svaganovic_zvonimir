@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98vh;
+        }
         div{
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
         .outline, .pulse{
             width: 800px;
             height: 800px;
-            border: 2px solid darkgray;
+            border: 10px solid rgb(240, 240, 240);
             border-radius: 50%;
         }
         .center{
@@ -22,31 +25,120 @@
             height: 100px;
             background-color: green;
             border-radius: 50%;
+            z-index: 1;
         }
         .pulse{
-            transform-origin: top left;
-            animation: scan 3s ease-out 0s infinite normal;
+            border-width: 20px;
+            animation: scan 2.5s cubic-bezier(0.22, 0.61, 0.36, 1) infinite normal;
         }
         @keyframes scan {
-            from{
-                scale: 0;
+            0%{
+                scale: 0.15;
                 opacity: 1;
+                background-color: white;
             }
-            to{
+            100%{
+                scale: 0.85;
+                opacity: 0
+            }
+        }
+        .km1, .km2{
+           border: 6px dashed rgb(240, 240, 240);
+           border-radius: 50%;
+        }
+        .km1{
+            width: 300px;
+            height: 300px;
+        }
+        .km2{
+            width: 550px;
+            height: 550px;
+        }
+        .km1, .km2, .outline{
+           display: flex;
+           align-items: center;
+        }
+        p{
+            position: relative;
+            left: -5%;
+            max-width: fit-content;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            font-size: larger;
+            color: rgb(210, 210, 210);
+            background-color: white;
+            border: 5px solid white;
+        }
+        .p1{left: -10%;}
+        .mali{
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(240, 240, 240);
+            z-index: 1;
+        }
+        #m1{
+            top: 36%;
+            left: 15%;
+            animation: popup 2.5s ease-out 0.7s infinite normal;
+        }
+        #m2{
+            top: -17%;
+            left: 26%;
+            animation: popup 2.5s ease-out 0.3s infinite normal;
+        }
+        #m3{
+            top: -27.5%;
+            left: 45%;
+            animation: popup 2.5s ease-out 0.5s infinite normal;
+        }
+        #m4{
+            top: 15%;
+            left: 47.5%;
+            animation: popup 2.5s ease-out 0.6s infinite normal;
+        }
+        #m5{
+            top: -12.5%;
+            left: 67.5%;
+            animation: popup 2.5s ease-out 0.75s infinite normal;
+
+        }
+        @keyframes popup {
+            0%{
                 scale: 1;
-                opacity: 0.2;
+            }
+            25%{
+               scale: 2; 
+               background-color: green;
+            }
+            50%{
+                scale: 1.1;
+                background-color: green;
+            }
+            100%{
+                scale: 1;
+                background-color: green;
             }
         }
     </style>
 </head>
 <body>
-    <div class="outline"></div>
+    <div class="outline">
+        <p class="p3">300km</p>
+        <div class="mali" id="m1"></div>
+        <div class="mali" id="m2"></div>
+        <div class="mali" id="m3"></div>
+        <div class="mali" id="m4"></div>
+        <div class="mali" id="m5"></div>
+    </div>
     <div class="pulse"></div>
     <div class="center"></div>
-    <div class="mali" id="1"></div>
-    <div class="mali" id="2"></div>
-    <div class="mali" id="3"></div>
-    <div class="mali" id="4"></div>
-    <div class="mali" id="5"></div>
+    <div class="km1">
+        <p class="p1">100km</p>
+    </div>
+    <div class="km2">
+        <p class="p2">200km</p>
+    </div>
 </body>
 </html>
