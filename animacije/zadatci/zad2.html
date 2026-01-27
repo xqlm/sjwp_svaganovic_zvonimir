@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 2</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98dvh;
+        }
+        .tata{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: ct 4s ease-in-out 0s infinite forwards;
+        }
+        @keyframes ct {
+            0%{
+                background-color: red;
+            }
+            33%{
+                background-color: blue;
+            }
+            66%{
+                background-color: green;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tata"></div>
+</body>
+</html>

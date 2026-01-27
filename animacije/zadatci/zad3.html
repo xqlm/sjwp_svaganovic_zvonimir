@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 3</title>
+    <style>
+        .krug{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            animation: mv 4s ease-in-out 0s infinite alternate;
+        }
+        @keyframes mv {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(calc(99dvw - 200px));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="krug"></div>
+</body>
+</html>
