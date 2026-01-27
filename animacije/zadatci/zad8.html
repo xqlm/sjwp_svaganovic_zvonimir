@@ -16,15 +16,69 @@
             height: 600px;
             background-color: #222222;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
             flex-direction: column;
         }
         .krug{
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            background-color: aqua;
+            border: 10px solid black;
+        }
+        #d1{
+            animation: f1 1s linear 1s 1 forwards;
+        }
+        #d2{
+            animation: f2 1s linear 2s 1 forwards;
+        }
+        #d3{
+            animation: f3 1s linear 3s 1 forwards;
+        }
+        @keyframes f1 {
+            0%{
+                background-color: #222222;
+            }
+            25%{
+                background-color: red;
+            }
+            75%{
+                background-color: red;
+            }
+            100%{
+                background-color: #222222;
+            }
+
+        }
+        @keyframes f2 {
+            0%{
+                background-color: #222222;
+            }
+            25%{
+                background-color: yellow;
+            }
+            75%{
+                background-color: yellow;
+            }
+            100%{
+                background-color: #222222;
+            }
+
+        }
+        @keyframes f3 {
+            0%{
+                background-color: #222222;
+            }
+            25%{
+                background-color: green;
+            }
+            75%{
+                background-color: green;
+            }
+            100%{
+                background-color: #222222;
+            }
+
         }
     </style>
 </head>
