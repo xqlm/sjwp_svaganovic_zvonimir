@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 98dvh;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+        .header, .footer{
+            width: 100%;
+            background-color: rgb(48, 145, 255);
+            text-align: center;
+            font-size: 2rem;
+        }
+        .middle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 90%;
+        }
+        .menu, .ad{
+            background-color: rgb(164, 109, 185);
+            flex-grow: 1;
+            height: 100%;
+            font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu #p1{
+            text-align: center;
+        }
+        .menu #p2{
+            padding: 5px;
+            align-self: flex-start;
+            font-size: 1rem;
+        }
+        .content{
+            width: 75%;
+            height: 100%;
+            background-color: rgb(197, 129, 39);
+            display: flex;
+            flex-direction: column;
+        }
+        .content #p1{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .content #p2{
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="middle">
+            <div class="menu">
+                <p id="p1">MENU</p>
+                <p id="p2">item1 <br>item2 <br>item3 <br>item4 <br>item5</p>
+            </div>
+            <div class="content"><p id="p1">CONTENT</p> 
+                                 <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                 Maiores, odit. Delectus totam molestias aspernatur dolores aliquam maxime! 
+                                 Dicta eum molestiae nulla sapiente dolorem veniam quam mollitia vero. Fuga, eum voluptatem!</p></div>
+            <div class="ad">AD</div>
+        </div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>
