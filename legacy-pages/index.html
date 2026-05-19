@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="my web page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Zvonimir Svaganovic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sktiptni jezici</title>
+    <!-- internal css -->
+    <style>
+        .drugi {
+            color:red;
+        }
+    </style>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>Zadace</h1>
+    <ol>
+        <li><a href="./zadace/zadaca1/zadaca1.html" target="_blank">zadaca1</a></li>
+        <li><a href="./zadace/zadaca2/zadaca2.html" target="_blank">zadaca2</a></li>
+        <li><a href="./zadace/zadaca3/pages/movies.html" target="_blank">zadaca3</a></li>
+        <li>zadaca4</li>
+        <li>zadaca5</li>
+    </ol>
+    <!-- hedding elementi -->
+    <h1>Naslov 1</h1>
+    <h2>Naslov 2</h2>
+    <h3>Naslov 3</h3>
+    <h4>Naslov 4</h4>
+    <h5>Naslov 5</h5>
+    <h6>Naslov 6</h6>
+    <!-- dodavanje css-a -->
+     <h2>dodavanje css-a</h2>
+    <ul>
+        <li style="color: lightskyblue;">Inline</li>
+        <li class="drugi">Internal</li>
+        <li class="treci">External</li>
+    </ul>
+     <!-- paragrafi -->
+    <!-- br - enter -->
+    <!-- hr - horizontal rule -->
+    <hr>
+    <p draggable="true">Lorem ipsum dolor sit amet consectetur <br> 
+        adipisicing elit. Aspernatur, obcaecati 
+        minus aliquam illo cumque praesentium natus <br>
+        quidem quam fugiat nesciunt consectetur quis, amet atque 
+        tempore molestiae qui illum recusandae nihil. <br>
+        Nisi consequuntur repellat sit expedita officia molestias, 
+        aspernatur ut ab explicabo ea at, vel fugiat ipsum placeat ratione. <br>
+        Error officia ab perferendis earum maiores accusantium dolor illum sed? 
+        Ipsam, laudantium?
+    </p>
+    
+    <h1>filmovi</h1>
+    <h2>top 3 filmovi</h2>
+    <hr>
+    <h3 id="naslov3">john wick</h3>
+    <p>paragraf</p>
+    <hr>
+    <h3>john wick 2</h3>
+    <p>paragraf</p>
+    <hr>
+    <h3>john wick 3: parabellum</h3>
+    <p>paragraf</p>
+
+    
+    <!-- oblikovanje teksta -->
+    <p>
+    Mi smo <strong>3.e razred</strong>. idemo u <em>tehnicku skolu</em>. 
+    <mark>Razrednik</mark> nam je <sub>prof.</sub> <sup>Benic</sup>. 
+    ima nas <del>24</del> 26 u razredu.
+    </p>
+    <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, 
+        amet consequatur dolorum neque excepturi distinctio vel consectetur 
+        repudiandae assumenda saepe veniam, porro reprehenderit quia asperiores 
+        minima blanditiis quisquam nisi obcaecati.
+    </pre>
+    
+    <!-- liste:
+    ul - unordered liste
+    ol - ordered liste
+    dl - dfinition liste
+    -->
+
+    
+
+    <h2>Voćni desert u čaši</h2>
+    <h3>Sastojci:</h3>
+    <ul type="square">
+        <li>230 g kreme za kremšnite</li>
+        <li>500 ml hladnog mlijeka</li>
+        <li>3-4 žlice pekmeza od višanja</li>
+    </ul>
+    <h3>Priprema:</h3>
+    <ol type="a" start="4">
+        <li>Prah za kremu pomiješati sa pola litre hladnog <br>
+            mlijeka te miksati 2-3 minute dok se ne dobije jednolična krema. </li>
+        <li>Pekmez od višanja rastopiti na blagoj vatri i ohladiti.</li>
+        <li>U desertne čaše rasporediti sloj pripremljene kreme pa žlicu i pol <br> 
+            voćnog nadjeva te ponoviti još jednom postupak i završiti sa voćnim <br> 
+            slojem. Posipati nasjeckanim pistacijem i staviti u hladnjak na hlađenje</li>
+    </ol>
+    <h2>Definition liste</h2>
+    <dl>
+        <dt>struja</dt>
+        <dd>usmjereno gibanje elektrona kroz vodič</dd>
+        <dt>napon</dt>
+        <dd>razlika potencijala između dvije točke</dd>
+    </dl>
+    <h2>nested liste</h2>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <ol>
+            <li>B1</li>
+            <li>B2</li>
+            <ul>
+                <li>B2a</li>
+                <ul>
+                    <li>B2aa</li>
+                    <li>B2ab</li>
+                </ul>
+                <li>B2b</li>
+                <li>B2c</li>
+            </ul>
+            <li>B3</li>
+            <ol>
+                <li>B31</li>
+                <li>B32</li>
+            </ol>
+        </ol>
+        <li>C</li>
+    </ul>
+
+    <small>mali tekst</small> <br>
+    <samp>primjer</samp>    
+    <ins>lorem tekst</ins>
+    <blockquote>neki tamo blockquote nez ni ja</blockquote>
+    <details>
+        <ul>
+            <li>autor: Zvonimir Švaganović</li>
+            <li>mjesto: TSSB</li>
+        </ul>
+    </details>
+    <ol type="I">
+        <li> Background Skills
+            <ol type="A">
+                <li>Unix Commands</li>
+                <li>Vim Text Editor</li>
+            </ol>
+        </li>
+        <li>HTML
+            <ol type="A">
+                <li>minimal page</li>
+                <li>headings</li>
+                <li>tags</li>
+                <li>lists
+                    <ol type="I">
+                        <li>ordered</li>
+                        <li>unordered</li>
+                        <li>Definition</li>
+                        <li>nested</li>
+                    </ol>
+                </li>
+                <li>links
+                    <ol type="I">
+                        <li>absolute</li>
+                        <li>relative</li>
+                    </ol>
+                </li>
+                <li>Images</li>
+            </ol>
+        </li>
+        <li>CSS
+            <ol type="A">
+            <li>Anatomy</li>
+            <li>Basic Selectors
+                <ol type="I">
+                    <li>Element</li>
+                    <li>Class</li>
+                    <li>ID</li>
+                    <li>Group</li>
+                </ol>
+            </li>
+            <li>The DOM</li>
+            <li>Advanced Selectors</li>
+            <li>Box Model</li>
+        </ol></li>
+        <li>programing
+            <ol type="A">
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ol>
+        </li>
+        <li>Database
+            <ol type="I">
+                <li>flat file</li>
+                <li>Relations</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h2>Anchor elementi</h2>
+    <p>Web stranicu škole možete vidjeti <a href="https://tssb.hr/" target="_blank">ovdje.</a></p>
+
+    <h1>Mojih top 5 stranica</h1>
+    <ol>
+        <li><a href="https://www.youtube.com/">youtube</a></li>
+        <li><a href="https://google.com/">google</a></li>
+        <li><a href="https://classroom.google.com/">classroom</a></li>
+        <li><a href="https://soldered.com/">soldered</a></li>
+        <li><a href="https://holex.hr/">holex</a></li>
+    </ol>
+
+    <h2>Img elementi</h2>
+    <!-- slika s weba -->
+    <img src="https://cdn.creatureandcoagency.com/uploads/2014/06/Bottlenose-Dolphin-Facts-2.jpg" alt="slika dupina" >
+    <!-- slika iz foldera -->
+    <br>
+    <img src="./slike/dupin.jpg" alt="slika dupina">
+
+    <h1>Pozivnica za moj rođendan</h1>
+    <h2>datum: 12.5.</h2>
+    <img src="https://images.getrecipekit.com/20250212152521-chocolate-20birthday-20cake-20recipe-20uk.jpg?aspect_ratio=16:9&quality=90&" alt="slika torte">
+    <h2>Ponesite</h2>
+    <ul>
+        <li>balone</li>
+        <li>kolače</li>
+        <li>apetit</li>
+    </ul>
+    <h2>lokacija:</h2>
+    <a href="https://maps.app.goo.gl/8myTBw8qjtB3etm77">link</a>
+
+    <!-- tablice -->
+
+    <h2>tablice u HTML-u</h2>
+    <table border="1">
+        <tr>
+            <th colspan="2">ime i prezime</th>
+            <th>razred</th>
+        </tr>
+        <tr>
+            <td>Zvonimir</td>
+            <td>Švaganović</td>
+            <td rowspan="3">3.E</td>
+        </tr>
+        <tr>
+            <td>Mirko</td>
+            <td>Škrinjar</td>
+        </tr>
+        <tr>
+            <td>Luka</td>
+            <td>Krunić</td>
+        </tr>
+    </table>
+
+    <h3><a href="./vjezba_tablice.html">vjezba_tablice.html</a></h3>
+
+</body>
+</html>
